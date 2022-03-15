@@ -1,0 +1,542 @@
+/* Reset Général */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables globales  */
+
+:root {
+  /* Colors */
+  --background-color0: #ff5631;
+  --background-color1: #fff;
+  --background-article-color: #c4c4c4;
+  --background-newsletter: #ffbcd8;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background: linear-gradient(
+    to left,
+    var(--background-color0),
+    0%,
+    var(--background-color1) 54%,
+    var(--background-color0) 30%
+  );
+  font-family: "Poppins", sans-serif;
+}
+
+/* Images */
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+a {
+  color: black;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+/* NavBar */
+
+nav {
+  height: 10rem;
+  padding: 3rem 7rem 0 7rem;
+  width: 100%;
+  z-index: 5;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .socialMedias a {
+  margin: 0 1rem;
+}
+
+nav .toggleMenu {
+  height: 5rem;
+  width: 5rem;
+}
+
+nav .toggleMenu a {
+  position: absolute;
+}
+
+/* Menu intéractif */
+
+.menu {
+  height: 90vh;
+  position: fixed;
+  opacity: 0;
+  z-index: -1;
+}
+
+.list ul {
+  list-style-type: none;
+  font-size: 5rem;
+}
+
+.list ul li {
+  margin-bottom: 2rem;
+}
+
+.list a {
+  text-decoration: none;
+  color: var(--background-color0);
+}
+
+.contact {
+  margin-top: 25rem;
+}
+
+.contact a {
+  color: black !important;
+}
+
+/* Main */
+
+main {
+  padding: 6rem 7rem;
+  display: flex;
+}
+
+/* Mise en page Desktop Video Articles */
+
+#videoArticle {
+  height: 76rem;
+  margin: 0 0 20rem 0;
+}
+
+.videoArticle0 h1 {
+  margin-right: 5rem;
+}
+
+.videoArticle0 .dateLink {
+  width: 90%;
+}
+
+.videoArticle1 {
+  background-color: var(--background-article-color);
+}
+
+.videoArticle1 .logoPlay {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Mise en page Desktop Articles */
+
+#article {
+  height: 10rem;
+  width: 70%;
+  margin: 5rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.titleDateLink {
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dateLink {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Coté Gauche */
+
+#leftSide {
+  width: 50%;
+  padding: 0 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#leftSide .videoArticle0 h1 {
+  color: var(--background-color1);
+}
+
+#leftSide .videoArticle0 p {
+  color: var(--background-color1);
+}
+
+.videoArticle1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+/* Coté Droit */
+
+.rightSide {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+span {
+  color: var(--background-color0);
+}
+
+.rightSide a {
+  color: var(--background-article-color);
+}
+
+/* Grand Article */
+
+.grandArticle {
+  width: 70%;
+  height: 70rem;
+}
+
+/* Newsletter */
+
+.newsletter {
+  background-color: var(--background-newsletter);
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter .titleNewsletter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.newsletter .titleNewsletter h2 {
+  font-size: 4.5rem;
+}
+
+.newsletter .inputSubmit {
+  padding: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.newsletter input {
+  padding: 0.5rem 1rem;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.newsletter button {
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1rem;
+}
+
+.newsletter .socialMedias a {
+  margin-right: 1rem;
+}
+
+/* Footer */
+
+footer {
+  background-color: var(--background-color1);
+  color: black;
+  height: 10rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Effets menu */
+
+.menuOn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  padding-top: 15rem;
+  width: 100%;
+  position: fixed;
+  opacity: 1;
+  z-index: 2;
+  background: linear-gradient(
+    to top right,
+    rgba(255, 0, 0, 0) 5%,
+    var(--background-color1) 20%
+  );
+}
+
+.menuOn ul {
+  list-style-type: none;
+  font-size: 5rem;
+}
+
+.menuOn ul li {
+  margin-bottom: 2rem;
+}
+
+.menuOn a {
+  text-decoration: none;
+  color: var(--background-color0);
+}
+
+/* No Scroll on menu */
+
+.noScroll {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Effets CSS */
+
+nav img:hover {
+  transform: scale(1.2);
+  transition: ease-in-out 0.3s;
+}
+
+.newsletter img:hover {
+  transform: scale(1.2);
+  transition: ease-in-out 0.3s;
+}
+
+nav #heyLogo:hover {
+  transform: scale(1.7) translateX(1rem) translateY(1.2rem);
+  transition: ease 0.2s;
+}
+
+#videoArticle:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+  transition: ease-in-out 0.3s;
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+#article:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: ease-in-out 0.3s;
+  text-decoration: underline;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: ease-in-out 0.2s;
+}
+
+.menuOn ul li:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
+  color: var(--background-color0);
+}
+
+.grandArticle:hover {
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+  text-decoration: underline;
+}
+
+/* Responsive design */
+/* Breakpoints 560 720 960 1280 */
+
+@viewport {
+  width: fit-content;
+  zoom: 1;
+}
+
+@media screen and (max-width: 1280px) {
+  main {
+    padding: 6rem 0;
+  }
+
+  #videoArticle {
+    height: 70rem;
+    margin: 1rem;
+  }
+
+  .leftSide {
+    padding: 0;
+  }
+
+  .grandArticle {
+    height: 70rem;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  body {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #article h2 {
+    font-size: 2rem;
+  }
+
+  .grandArticle {
+    height: 60rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #article {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  #leftSide {
+    padding: 0 1rem;
+  }
+
+  #article h2 {
+    font-size: 2rem;
+  }
+
+  #article p {
+    font-size: 2rem;
+  }
+
+  #article a {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #article h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  body {
+    background: linear-gradient(
+      to top,
+      var(--background-color0),
+      0%,
+      var(--background-color1) 54%,
+      var(--background-color0) 30%
+    );
+  }
+
+  #navBar .socialMedias {
+    visibility: hidden;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .leftSide {
+    width: 50rem;
+  }
+
+  #article {
+    width: 50rem;
+  }
+
+  .grandArticle {
+    width: 45rem;
+  }
+
+  #rightSide {
+    width: 80%;
+  }
+
+  #article h2 {
+    font-size: 2rem;
+  }
+
+  #article p {
+    font-size: 2rem;
+  }
+
+  #article a {
+    font-size: 2rem;
+  }
+
+  span {
+    color: black;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  nav {
+    padding: 1rem;
+  }
+
+  main {
+    width: 100vw;
+  }
+
+  .menuOn {
+    padding-top: 10rem;
+    height: 100vh;
+    background-color: var(--background-color1);
+  }
+
+  .menuOn ul li {
+    margin-bottom: 0;
+  }
+
+  .menuOn ul li a {
+    color: var(--background-color0);
+  }
+
+  .menuOn .contact {
+    margin-top: 10rem;
+  }
+
+  #leftSide {
+    width: 90%;
+  }
+
+  .videoArticle0 {
+    max-width: 90%;
+  }
+
+  .rightSide {
+    width: 90%;
+  }
+
+  #article {
+    height: 8rem;
+    width: 33rem;
+  }
+
+  .grandArticle {
+    width: 32rem;
+  }
+
+  .newsletter {
+    width: 100vw;
+  }
+}
