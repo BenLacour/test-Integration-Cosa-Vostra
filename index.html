@@ -5,14 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <!-- Lien CSS -->
     <link rel="stylesheet" href="./style.css" />
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/logo/Logo_main.png" />
     <title>Hey</title>
   </head>
   <body>
@@ -46,7 +45,17 @@
           <li><a href="#!"><strong><span>Forum</strong></span></a></li>
           <li><a href="#!"><strong><span>A propos</strong></span></a></li>
         </div>
-          <div class="contact"><a href="#!">Contact</a></div>
+          <div class="contact"><a href="#!">Contact</a>
+               <!-- Icons Social Media menu width < 520px -->
+      <div class="socialMedias1">
+        <a href="#!"
+          ><img src="./assets/icons/Instagram.png" alt="instagram_icon"
+        /></a>
+        <a href="#!"
+          ><img src="./assets/icons/Twitter.png" alt="twitter_icon"
+        /></a>
+      </div></div>
+     
         </ul>
       </div>
      <!-- Main  -->
@@ -54,7 +63,7 @@
       <!----------------------------------------------------- Coté gauche ----------------------------------------------------->
       <div id="leftSide">
         <!-- 1er article video -->
-        <div class="videoArticle0" id="videoArticle">
+        <div class="featuredArticle0" id="featuredArticle">
           <img
             src="./assets/images/background_video.png"
             alt="background_video"
@@ -69,7 +78,7 @@
           </div>
         </div>
         <!-- 2eme article video -->
-        <div class="videoArticle1" id="videoArticle">
+        <div class="featuredArticle1" id="featuredArticle">
           <!-- Logo & play -->
           <div class="logoPlay">
           <a href="#!"><img src="./assets/icons/Play.png" alt="play" />Play</a>
@@ -159,7 +168,7 @@
           />
         </div>
         <!---------------------------- Grand article ---------------------------->
-        <div class="grandArticle">
+        <div class="featuredArticleRight">
           <h1>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Architecto.
@@ -241,6 +250,10 @@
             src="./assets/images/background_video.png"
             alt="miniature_article"
           />
+        </div>
+        <!-- Espace pour la newsletter -->
+        <div class="espaceNewsletter">
+
         </div>
         <!----------------------- 9eme article ----------------------->
         <div class="article8" id="article">
@@ -330,8 +343,15 @@
     </h2>
   </div>
   <div class="inputSubmit">
+    <!-- Icone main 1 -->
+    <img class="hand0" id="handIcon" src="./assets/icons/Emoji.png" alt="hand">
+    <!-- Icone main 2 -->
+    <img class="hand1" id="handIcon" src="./assets/icons/Emoji.png" alt="hand">
+    <!-- Input et bouton-->
     <input type="email" name="email" id="email" placeholder="Ton Email" />
     <button type="submit">Je m'abonne</button>
+      <!-- Icone main 3 -->
+      <img class="hand2" id="handIcon" src="./assets/icons/Emoji.png" alt="hand">
   </div>
   <!-- Icons Social Media -->
   <div class="socialMedias">

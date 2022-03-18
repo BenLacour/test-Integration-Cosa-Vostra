@@ -7,12 +7,13 @@ const bodyNoScroll = document.querySelector("body");
 const openMenu = document.getElementById("openMenu");
 const closeMenu = document.getElementById("closeMenu");
 const navBar = document.getElementById("navBar");
+const socialMedias1 = document.querySelector(".socialMedias1");
 
 // Cacher le closeMenu en début de page
 
 closeMenu.hidden = true;
 
-// Toggle openMenu / closeMenu button
+// --------------------- Toggle openMenu
 
 openMenu.addEventListener("click", function() {
 // console.log("open"); // Vérification de la validité de l'eventListener
@@ -28,11 +29,13 @@ menuShow.classList.add("menuOn");
 
 document.getElementById("heyLogo").src="./assets/logo/Logo_menu.png";
 
-// No Scroll
+// No Scroll de la page
 
 bodyNoScroll.classList.add("noScroll");
 
 });
+
+// --------------------- Toggle closeMenu
 
 closeMenu.addEventListener("click", function() {
 // console.log("close"); // Vérification de la validité de l'eventListener
@@ -48,7 +51,7 @@ menuShow.classList.add("menu");
 
 document.getElementById("heyLogo").src="./assets/logo/Logo_main.png";
 
-// Scroll
+// Scroll de la page
 
 bodyNoScroll.classList.remove("noScroll");
 });
